@@ -86,7 +86,6 @@
     //strPath=[[NSBundle mainBundle] pathForResource:@"cats" ofType:@"mp4"];
     
     NSURL *videoURL = [NSURL fileURLWithPath:strPath];
-    
     self.moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:videoURL];
     self.moviePlayer.controlStyle = MPMovieControlStyleNone;
     self.moviePlayer.shouldAutoplay = YES;
