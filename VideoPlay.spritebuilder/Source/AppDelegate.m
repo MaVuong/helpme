@@ -66,8 +66,7 @@
 }
 
 -(void)copyResourceToDocuments:(NSString *)strfilename NewFileName:(NSString*)strnewfile{
-    NSString *strpath=sys_dir;
-    NSString *strTarget=[NSString stringWithFormat:@"%@/%@",strpath,strnewfile];
+    NSString *strTarget=[NSString stringWithFormat:@"%@/%@",sys_dir,strnewfile];
     NSString *strfileSource=[[[NSBundle mainBundle] bundlePath] stringByAppendingFormat:@"/%@",strfilename];
     NSFileManager *fileManager=[NSFileManager defaultManager];
     BOOL exits = [fileManager fileExistsAtPath:strTarget];
